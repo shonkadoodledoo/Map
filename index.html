@@ -19,14 +19,13 @@ L.tileLayer('map/{z}/{x}/{y}.png', {
       maxZoom: 4,
     }).addTo(map);
   //Coordinate Finder
-    var marker = L.marker([0, 0], {
-      draggable: true,
-    }).addTo(map);
-    marker.bindPopup('LatLng Marker').openPopup();
-    marker.on('dragend', function(e) {
-      marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
-    });
+    
   //Markers
+   var trakyton = L.marker([-16.467695, -23.4676]).bindPopup('Trakyton').addTo(map)
+  var solas = L.marker([-18.229351, -8.178622]).bindPopup('Solas').addTo(map)
+  var aspar = L.marker([6.227934, 0.608949]).bindPopup('Aspar').addTo(map)
+  var eldham = L.marker([-33.849978, -30.57774]).bindPopup('Eldham').addTo(map)
+  var gritta = L.marker([-20.453393, 3.514838]).bindPopup('Gritta').addTo(map)  
     </script>
   </body>
 </html>
