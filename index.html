@@ -15,17 +15,15 @@
 L.tileLayer('map/{z}/{x}/{y}.png', {
       continuousWorld: false,
       noWrap: true,  
-      minZoom: 1,
-      maxZoom: 4,
+      minZoom: 1.5,
+      maxZoom: 5,
     }).addTo(map);
-  //Coordinate Finder
-    
-  //Markers
-   var trakyton = L.marker([-16.467695, -23.4676]).bindPopup('Trakyton').addTo(map)
-  var solas = L.marker([-18.229351, -8.178622]).bindPopup('Solas').addTo(map)
-  var aspar = L.marker([6.227934, 0.608949]).bindPopup('Aspar').addTo(map)
-  var eldham = L.marker([-33.849978, -30.57774]).bindPopup('Eldham').addTo(map)
-  var gritta = L.marker([-20.453393, 3.514838]).bindPopup('Gritta').addTo(map)  
+   //Markers
+  var trakyton = L.marker([-10.919618, -18.457031]).bindPopup('Trakyton').addTo(map)
+  var solas = L.marker([-12.811801, -6.152344]).bindPopup('Solas').addTo(map)
+  var aspar = L.marker([5.266008, 0.703125]).bindPopup('Aspar').addTo(map)
+  var eldham = L.marker([-24.926295, -22.412109]).bindPopup('Eldham').addTo(map)
+  var gritta = L.marker([-15.961329, 0.966797]).bindPopup('Gritta').addTo(map)  
     </script>
   </body>
 </html>
