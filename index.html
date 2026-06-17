@@ -132,7 +132,14 @@ L.tileLayer('map/{z}/{x}/{y}.png', {
 		popupAnchor: [1, -34],
 		tooltipAnchor: [16, -28],
 	}); 
-	
+	  //Coordinate Finder
+    var marker = L.marker([0, 0], {
+      draggable: true,
+    }).addTo(map);
+    marker.bindPopup('YOU ARE HERE').openPopup();
+    marker.on('dragend', function(e) {
+      marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
+    });
    //Markers
   var trakyton = L.marker([-10.919618, -18.457031], {icon: crown}).bindPopup('<b>Trakyton</b><br><sup>The capital').addTo(map)
   var solas = L.marker([-12.811801, -6.152344], {icon: anchor}).bindPopup('<b>Solas').addTo(map)
