@@ -15,15 +15,148 @@
 L.tileLayer('map/{z}/{x}/{y}.png', {
       continuousWorld: false,
       noWrap: true,  
-      minZoom: 1.5,
+      minZoom: 1.8,
       maxZoom: 5,
     }).addTo(map);
+	
+  //Icons
+	var crown = L.icon({
+		iconUrl:       'icons/crown.png',
+		iconRetinaUrl: 'icons/crown.png',
+		iconSize:    [30, 30],
+		iconAnchor:  [20, 20],
+		popupAnchor: [1, -34],
+		tooltipAnchor: [16, -28],
+	});  
+	var crownalt = L.icon({
+		iconUrl:       'icons/crownalt.png',
+		iconRetinaUrl: 'icons/crownalt.png',
+		iconSize:    [30, 30],
+		iconAnchor:  [20, 20],
+		popupAnchor: [1, -34],
+		tooltipAnchor: [16, -28],
+	});  
+	var city = L.icon({
+		iconUrl:       'icons/city.png',
+		iconRetinaUrl: 'icons/city.png',
+		iconSize:    [30, 30],
+		iconAnchor:  [20, 20],
+		popupAnchor: [1, -34],
+		tooltipAnchor: [16, -28],
+	});  
+	var tribe = L.icon({
+		iconUrl:       'icons/tribe.png',
+		iconRetinaUrl: 'icons/tribe.png',
+		iconSize:    [30, 30],
+		iconAnchor:  [20, 20],
+		popupAnchor: [1, -34],
+		tooltipAnchor: [16, -28],
+	});  
+	var mountain = L.icon({
+		iconUrl:       'icons/mountain.png',
+		iconRetinaUrl: 'icons/mountain.png',
+		iconSize:    [30, 30],
+		iconAnchor:  [20, 20],
+		popupAnchor: [1, -34],
+		tooltipAnchor: [16, -28],
+	});  
+	var village = L.icon({
+		iconUrl:       'icons/village.png',
+		iconRetinaUrl: 'icons/village.png',
+		iconSize:    [30, 30],
+		iconAnchor:  [20, 20],
+		popupAnchor: [1, -34],
+		tooltipAnchor: [16, -28],
+	});  
+	var critter = L.icon({
+		iconUrl:       'icons/critter.png',
+		iconRetinaUrl: 'icons/critter.png',
+		iconSize:    [30, 30],
+		iconAnchor:  [20, 20],
+		popupAnchor: [1, -34],
+		tooltipAnchor: [16, -28],
+	});  
+	var castle = L.icon({
+		iconUrl:       'icons/castle.png',
+		iconRetinaUrl: 'icons/castle.png',
+		iconSize:    [30, 30],
+		iconAnchor:  [20, 20],
+		popupAnchor: [1, -34],
+		tooltipAnchor: [16, -28],
+	});  
+	var door = L.icon({
+		iconUrl:       'icons/door.png',
+		iconRetinaUrl: 'icons/door.png',
+		iconSize:    [30, 30],
+		iconAnchor:  [20, 20],
+		popupAnchor: [1, -34],
+		tooltipAnchor: [16, -28],
+	});  
+	var knight = L.icon({
+		iconUrl:       'icons/knight.png',
+		iconRetinaUrl: 'icons/knight.png',
+		iconSize:    [30, 30],
+		iconAnchor:  [20, 20],
+		popupAnchor: [1, -34],
+		tooltipAnchor: [16, -28],
+	});  
+	var tree = L.icon({
+		iconUrl:       'icons/tree.png',
+		iconRetinaUrl: 'icons/tree.png',
+		iconSize:    [30, 30],
+		iconAnchor:  [20, 20],
+		popupAnchor: [1, -34],
+		tooltipAnchor: [16, -28],
+	});
+	var circle = L.icon({
+		iconUrl:       'icons/circle.png',
+		iconRetinaUrl: 'icons/circle.png',
+		iconSize:    [10, 10],
+		iconAnchor:  [5, 5],
+		popupAnchor: [1, -34],
+		tooltipAnchor: [16, -28],
+	});    
+	var anchor = L.icon({
+		iconUrl:       'icons/anchor.png',
+		iconRetinaUrl: 'icons/anchor.png',
+		iconSize:    [30, 30],
+		iconAnchor:  [20, 20],
+		popupAnchor: [1, -34],
+		tooltipAnchor: [16, -28],
+	}); 
+	var critterbig = L.icon({
+		iconUrl:       'icons/critterbig.png',
+		iconRetinaUrl: 'icons/critterbig.png',
+		iconSize:    [100, 100],
+		iconAnchor:  [50, 50],
+		popupAnchor: [1, -34],
+		tooltipAnchor: [16, -28],
+	}); 
+	
    //Markers
-  var trakyton = L.marker([-10.919618, -18.457031]).bindPopup('Trakyton').addTo(map)
-  var solas = L.marker([-12.811801, -6.152344]).bindPopup('Solas').addTo(map)
-  var aspar = L.marker([5.266008, 0.703125]).bindPopup('Aspar').addTo(map)
-  var eldham = L.marker([-24.926295, -22.412109]).bindPopup('Eldham').addTo(map)
-  var gritta = L.marker([-15.961329, 0.966797]).bindPopup('Gritta').addTo(map)  
-    </script>
+  var trakyton = L.marker([-10.919618, -18.457031], {icon: crown}).bindPopup('<b>Trakyton</b><br><sup>The capital').addTo(map)
+  var solas = L.marker([-12.811801, -6.152344], {icon: anchor}).bindPopup('<b>Solas').addTo(map)
+  var aspar = L.marker([5.266008, 0.703125], {icon: city}).bindPopup('<b>Aspar').addTo(map)
+  var eldham = L.marker([-24.926295, -22.412109], {icon: city}).bindPopup('<b>Eldham').addTo(map)
+  var gritta = L.marker([-15.961329, 0.966797], {icon: village}).bindPopup('<b>Gritta</b><br><sup>Did anyone other than the OG map think Gritta was here?').addTo(map) 
+  var humea = L.marker([11.733717, 3.734367], {icon: mountain}).bindPopup('<b>Glinmoor&apos;s Tor</b><br><sup>It is rude to climb this hill when they are sleeping').addTo(map) 
+  var empty = L.marker([26.273714, -88.740379], {icon: circle}).bindPopup('<b>The Empty</b><br><sup>No one lives here so it is <i>totally</i> empty').addTo(map) 
+  var akir = L.marker([25.165173, 46.391618], {icon: critter}).bindPopup('<b>Akir</b><br><sup>An uncle').addTo(map) 
+  var kerkis = L.marker([35.173808, -54.29928], {icon: mountain}).bindPopup('<b>Kerkis').addTo(map) 
+  var grawenburg = L.marker([50.736455, -23.547261], {icon: city}).bindPopup('<b>Gräwenburg').addTo(map) 
+  var calamar = L.marker([-33.72434, -52.893474], {icon: anchor}).bindPopup('<b>Calamar</B><br><sup>AKA that place Shonk thought was where Gritta was').addTo(map)
+  var anyeril = L.marker([33.72434, -29.873391], {icon: critter}).bindPopup('<b>An&apos;yeril&apos;s hoard</b><br><sup>').addTo(map)  
+  var nandag = L.marker([39.368279, -19.505567], {icon: critter}).bindPopup('<b>Nandag&apos;s hoard</b><br><sup>').addTo(map)
+  var opal = L.marker([-19.311143, 66.424362], {icon: village}).bindPopup('<b>The village formerly known as Hynrid</b><br><sup>but now Opal').addTo(map) 
+  var drop = L.marker([33.137551, -62.909846], {icon: castle}).bindPopup('<b>The Drop').addTo(map) 
+  var startsida = L.marker([31.802893, 30.576294], {icon: city}).bindPopup('<b>Startsida').addTo(map) 
+  var dornin = L.marker([22.755921, 28.819036], {icon: village}).bindPopup('<b>Dornin').addTo(map) 
+  var branorn = L.marker([-19.808054, -63.964201], {icon: city}).bindPopup('<b>Branorn').addTo(map)
+  var kezzel = L.marker([-63.391522, 4.21742], {icon: critterbig}).bindPopup('<b>Kezzel</b><br><sup>Is he big enough, Merlin? XD').addTo(map)  
+  var varrangin = L.marker([8.578489, -12.480524], {icon: knight}).bindPopup('<b>Varrangin</b><br><sup>Dragon Knights').addTo(map)
+  var sorrow = L.marker([14.604847, 29.521939], {icon: knight}).bindPopup('<b>Sorrow&apos;s Roost</b><br><sup>Dragon Knights').addTo(map)
+  var heidrunrikur = L.marker([41.508577, 39.714037], {icon: critter}).bindPopup('<b>Heidrunikur</b><br><sup>A wyvern').addTo(map) 
+  var kalju = L.marker([1.58183, -33.563633], {icon: critter}).bindPopup('<b>Kalju</b><br><sup>A drake').addTo(map) 
+	</script>
   </body>
 </html>
