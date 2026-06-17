@@ -15,7 +15,7 @@
 L.tileLayer('map/{z}/{x}/{y}.png', {
       continuousWorld: false,
       noWrap: true,  
-      minZoom: 1.8,
+      minZoom: 1.7,
       maxZoom: 5,
     }).addTo(map);
 	
@@ -132,6 +132,38 @@ L.tileLayer('map/{z}/{x}/{y}.png', {
 		popupAnchor: [1, -34],
 		tooltipAnchor: [16, -28],
 	}); 
+		var mine = L.icon({
+		iconUrl:       'icons/mine.png',
+		iconRetinaUrl: 'icons/mine.png',
+		iconSize:    [25, 25],
+		iconAnchor:  [10, 10],
+		popupAnchor: [1, -34],
+		tooltipAnchor: [16, -28],
+	}); 
+		var water = L.icon({
+		iconUrl:       'icons/water.png',
+		iconRetinaUrl: 'icons/water.png',
+		iconSize:    [30, 30],
+		iconAnchor:  [20, 20],
+		popupAnchor: [1, -34],
+		tooltipAnchor: [16, -28],
+	}); 
+		var shield = L.icon({
+		iconUrl:       'icons/shield.png',
+		iconRetinaUrl: 'icons/shield.png',
+		iconSize:    [30, 30],
+		iconAnchor:  [20, 20],
+		popupAnchor: [1, -34],
+		tooltipAnchor: [16, -28],
+	}); 
+		var bridge = L.icon({
+		iconUrl:       'icons/bridge.png',
+		iconRetinaUrl: 'icons/bridge.png',
+		iconSize:    [30, 30],
+		iconAnchor:  [20, 20],
+		popupAnchor: [1, -34],
+		tooltipAnchor: [16, -28],
+	}); 
 	
   //Coordinate Finder
     var marker = L.marker([0, 0], {
@@ -151,7 +183,7 @@ L.tileLayer('map/{z}/{x}/{y}.png', {
   var humea = L.marker([11.733717, 3.734367], {icon: mountain}).bindPopup('<b>Glinmoor&apos;s Tor</b><br><sup>It is rude to climb this hill when they are sleeping').addTo(map) 
   var empty = L.marker([26.273714, -88.740379], {icon: circle}).bindPopup('<b>The Empty</b><br><sup>No one lives here so it is <i>totally</i> empty').addTo(map) 
   var akir = L.marker([25.165173, 46.391618], {icon: critter}).bindPopup('<b>Akir</b><br><sup>An uncle').addTo(map) 
-  var kerkis = L.marker([35.173808, -54.29928], {icon: mountain}).bindPopup('<b>Kerkis').addTo(map) 
+  var kerkis = L.marker([35.173808, -54.29928], {icon: mountain}).bindPopup('<b>Kerkis</b><br><sup>A hot hill').addTo(map) 
   var grawenburg = L.marker([50.736455, -23.547261], {icon: city}).bindPopup('<b>Gräwenburg').addTo(map) 
   var calamar = L.marker([-33.72434, -52.893474], {icon: anchor}).bindPopup('<b>Calamar</B><br><sup>AKA that place Shonk thought was where Gritta was').addTo(map)
   var anyeril = L.marker([33.72434, -29.873391], {icon: critter}).bindPopup('<b>An&apos;yeril&apos;s hoard</b><br><sup>').addTo(map)  
@@ -177,14 +209,16 @@ L.tileLayer('map/{z}/{x}/{y}.png', {
   var vrpass = L.marker([45.06045, -13.904432], {icon: door}).bindPopup('<b>Vígtennubit Ranges Pass</b><br><sup>').addTo(map) 
   var opass = L.marker([34.891539, 39.390512], {icon: door}).bindPopup('<b>Orsinean Pass</b><br><sup>').addTo(map) 
   var glera = L.marker([50.061766, -55.910673], {icon: castle}).bindPopup('<b>Glerá</b><br><sup>').addTo(map) 
-  var kthonarynn = L.marker([88.036511, 154.397166], {icon: critter}).bindPopup('<b>Kthonärynn</b><br><sup>Chillin&apos;').addTo(map) 
-  var kaalani = L.marker([-1.229745, 49.030048], {icon: tribe}).bindPopup('<b>Ka&apos;alani</b><br><sup>').addTo(map)
+  var kthonarynn = L.marker([140.036511, 154.397166], {icon: critter}).bindPopup('<b>Kthonärynn</b><br><sup>Chillin&apos;').addTo(map) 
+  var kaalani = L.marker([-1.229745, 49.030048], {icon: tribe}).bindPopup('<b>Ka&apos;alani</b><br><sup>Itty bitty teeny weeny').addTo(map)
   var enginharia = L.marker([29.21523, -31.64984], {icon: city}).bindPopup('<b>Enginharia</b><br><sup>').addTo(map) 
   var paddy = L.marker([7.361575, 3.648114], {icon: critter}).bindPopup('<b>The Idjit!</b><br><sup>uwu').addTo(map) 
   var avestan = L.marker([9.143688, 1.450208], {icon: village}).bindPopup('<b>Avestan</b><br><sup>').addTo(map)
   var treorci = L.marker([26.103547, -4.132062], {icon: village}).bindPopup('<b>Treorci</b><br><sup>It is a little bit crispy').addTo(map)
   var jykhiran = L.marker([-42.293564, 71.982601], {icon: tribe}).bindPopup('<b>Jykhiran</b><br><sup>').addTo(map) 
-  
+  var witiji = L.marker([17.806971, -81.5625], {icon: critter}).bindPopup('<b>Witiji</b><br><sup>').addTo(map)
+  var hmine = L.marker([-2.10782, 26.726532], {icon: mine}).bindPopup('<b>Hyll Mines</b><br><sup>').addTo(map)
+  var lakean = L.marker([21.278981, 15.649088], {icon: water}).bindPopup('<b><i>An</i></b><br><sup>').addTo(map)
 	</script>
   </body>
 </html>
