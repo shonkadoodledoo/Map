@@ -132,7 +132,8 @@ L.tileLayer('map/{z}/{x}/{y}.png', {
 		popupAnchor: [1, -34],
 		tooltipAnchor: [16, -28],
 	}); 
-	  //Coordinate Finder
+	
+  //Coordinate Finder
     var marker = L.marker([0, 0], {
       draggable: true,
     }).addTo(map);
@@ -140,6 +141,7 @@ L.tileLayer('map/{z}/{x}/{y}.png', {
     marker.on('dragend', function(e) {
       marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
     });
+	
    //Markers
   var trakyton = L.marker([-10.919618, -18.457031], {icon: crown}).bindPopup('<b>Trakyton</b><br><sup>The capital').addTo(map)
   var solas = L.marker([-12.811801, -6.152344], {icon: anchor}).bindPopup('<b>Solas').addTo(map)
@@ -163,7 +165,9 @@ L.tileLayer('map/{z}/{x}/{y}.png', {
   var varrangin = L.marker([8.578489, -12.480524], {icon: knight}).bindPopup('<b>Varrangin</b><br><sup>Dragon Knights').addTo(map)
   var sorrow = L.marker([14.604847, 29.521939], {icon: knight}).bindPopup('<b>Sorrow&apos;s Roost</b><br><sup>Dragon Knights').addTo(map)
   var heidrunrikur = L.marker([41.508577, 39.714037], {icon: critter}).bindPopup('<b>Heidrunikur</b><br><sup>A wyvern').addTo(map) 
-  var kalju = L.marker([1.58183, -33.563633], {icon: critter}).bindPopup('<b>Kalju</b><br><sup>A drake').addTo(map) 
+  var kalju = L.marker([1.58183, -33.563633], {icon: critter}).bindPopup('<b>Kalju</b><br><sup>A drake').addTo(map)
+  var swampy = L.marker([-24.59792, 73.017866], {icon: circle}).bindPopup('<b>Swampy</b><br><sup>AKA Fantasy Florida woman').addTo(map)  
+  var kaalani = L.marker([-1.229745, 49.030048], {icon: tribe}).bindPopup('<b>Ka&apos;alani</b><br><sup>').addTo(map) 
 	</script>
   </body>
 </html>
