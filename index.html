@@ -3,6 +3,7 @@
   <head>
     <title>The Bes(t) Empire</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="icon/x-icon" href="icons/icon.ico">
     <link rel="stylesheet" href="scripts/leaflet.css">
     <script src="scripts/leaflet.js"></script>
   </head>
@@ -10,7 +11,7 @@
   <body style="height: 100%;margin: 0;">
     <div id="map" style="width: 100%; height: 100%; background: #29333f;"></div>
     <script type="text/javascript">
-  //Creating the Map
+  //Map
     var map = L.map('map').setView([0, 0], 0);
 L.tileLayer('map/{z}/{x}/{y}.png', {
       continuousWorld: false,
@@ -193,7 +194,7 @@ L.tileLayer('map/{z}/{x}/{y}.png', {
   var startsida = L.marker([31.802893, 30.576294], {icon: city}).bindPopup('<b>Startsida').addTo(map) 
   var dornin = L.marker([22.755921, 28.819036], {icon: village}).bindPopup('<b>Dornin').addTo(map) 
   var branorn = L.marker([-19.808054, -63.964201], {icon: city}).bindPopup('<b>Branorn').addTo(map)
-  var kezzel = L.marker([-63.391522, 4.21742], {icon: critterbig}).bindPopup('<b>Kezzel</b><br><sup>Is he big enough, Merlin? XD').addTo(map)  
+  var kezzel = L.marker([-62.754726, -50.273438], {icon: critterbig}).bindPopup('<b>Kezzel</b><br><sup>Is he big enough, Merlin? XD').addTo(map)  
   var varrangin = L.marker([8.578489, -12.480524], {icon: knight}).bindPopup('<b>Varrangin</b><br><sup>Dragon Knights').addTo(map)
   var sorrow = L.marker([14.604847, 29.521939], {icon: knight}).bindPopup('<b>Sorrow&apos;s Roost</b><br><sup>Dragon Knights').addTo(map)
   var heidrunrikur = L.marker([41.508577, 39.714037], {icon: critter}).bindPopup('<b>Heidrunikur</b><br><sup>A wyvern').addTo(map) 
@@ -202,7 +203,7 @@ L.tileLayer('map/{z}/{x}/{y}.png', {
   var huwehl = L.marker([24.821421, -61.730857], {icon: knight}).bindPopup('<b>Huwehl House</b><br><sup>Dragon Knights').addTo(map) 
   var vaikulo = L.marker([-12.905205, 27.592025], {icon: knight}).bindPopup('<b>Vaikulo</b><br><sup>Dragon Knights').addTo(map) 
   var aerie = L.marker([43.168635, -60.148365], {icon: knight}).bindPopup('<b>The Aerie</b><br><sup>Dragon Knights').addTo(map)
-  var arviank = L.marker([24.821421, 78.231769], {icon: knight}).bindPopup('<b>Insert Name</b><br><sup>Dragon Knights').addTo(map) 
+  var arviank = L.marker([24.821421, 78.231769], {icon: knight}).bindPopup('<b>Arviank</b><br><sup>Dragon Knights').addTo(map) 
   var voronnezha = L.marker([9.429895, -32.191006], {icon: castle}).bindPopup('<b>Voronnezha</b><br><sup>Iluka and Nurrin&apos;s home that they are never at on account of avoiding one another').addTo(map) 
   var kylsma = L.marker([4.373457, -61.730857], {icon: castle}).bindPopup('<b>Kylsma</b><br><sup>Ruins').addTo(map)   
   var dorsai = L.marker([35.146157, -12.32194], {icon: castle}).bindPopup('<b>Dorsai</b><br><sup>Bertie&apos;s place').addTo(map) 
@@ -212,13 +213,27 @@ L.tileLayer('map/{z}/{x}/{y}.png', {
   var kthonarynn = L.marker([140.036511, 154.397166], {icon: critter}).bindPopup('<b>Kthonärynn</b><br><sup>Chillin&apos;').addTo(map) 
   var kaalani = L.marker([-1.229745, 49.030048], {icon: tribe}).bindPopup('<b>Ka&apos;alani</b><br><sup>Itty bitty teeny weeny').addTo(map)
   var enginharia = L.marker([29.21523, -31.64984], {icon: city}).bindPopup('<b>Enginharia</b><br><sup>').addTo(map) 
-  var paddy = L.marker([7.361575, 3.648114], {icon: critter}).bindPopup('<b>The Idjit!</b><br><sup>uwu').addTo(map) 
+  var paddy = L.marker([7.361575, 3.648114], {icon: critter}).bindPopup('<img src="icons/arson.png" width="120px" height="120px">').addTo(map) 
   var avestan = L.marker([9.143688, 1.450208], {icon: village}).bindPopup('<b>Avestan</b><br><sup>').addTo(map)
   var treorci = L.marker([26.103547, -4.132062], {icon: village}).bindPopup('<b>Treorci</b><br><sup>It is a little bit crispy').addTo(map)
   var jykhiran = L.marker([-42.293564, 71.982601], {icon: tribe}).bindPopup('<b>Jykhiran</b><br><sup>').addTo(map) 
   var witiji = L.marker([17.806971, -81.5625], {icon: critter}).bindPopup('<b>Witiji</b><br><sup>').addTo(map)
   var hmine = L.marker([-2.10782, 26.726532], {icon: mine}).bindPopup('<b>Hyll Mines</b><br><sup>').addTo(map)
-  var lakean = L.marker([21.278981, 15.649088], {icon: water}).bindPopup('<b><i>An</i></b><br><sup>').addTo(map)
+  var viv = L.marker([25.641526, 9.84375], {icon: castle}).bindPopup('<b>Viv <3</b><br><sup>The best of Bes').addTo(map)
+  var lakean = L.marker([21.278981, 15.649088], {icon: water}).bindPopup('<b>Lake <i>An</i></b><br><sup>').addTo(map)
+  var liz = L.marker([18.646245, 5.097656], {icon: castle}).bindPopup('<b>Darkschewitsch Estate</b><br><sup>').addTo(map)
+  var dove = L.marker([-32.694866, -62.753906], {icon: castle}).bindPopup('<b>Dove Estate</b><br><sup>').addTo(map)
+  var riegre = L.marker([1.406109, 61.875], {icon: village}).bindPopup('<b>Nightmare town</b><br><sup>Pretty sure everyone here got MURDERED!!').addTo(map)
+  var marionne = L.marker([16.972741, 102.832031], {icon: crownalt}).bindPopup('<b>INSERT NAME, MERLIN!</b><br><sup>notBes!').addTo(map)
+  var gyali = L.marker([34.73357, -55.898438], {icon: village}).bindPopup('<b>Gyali</b><br><sup>').addTo(map)
+  var demmel = L.marker([-21.60225, -122.607422], {icon: critter}).bindPopup('<b>Demmel</b><br><sup>The fake el').addTo(map)
+  var yaron = L.marker([-23.240338, 98.4375], {icon: critter}).bindPopup('<b>Yaron</b><br><sup>').addTo(map)
+  var town = L.marker([32.977658, -57.641998], {icon: village}).bindPopup('<b>Town</b><br><sup>Presumably this place has a real name but all the locals just call it town').addTo(map)
+  var lucretya = L.marker([10.826641, -8.435057], {icon: castle}).bindPopup('<b>Lucretya</b><br><sup>Everest Lucha&apos;s home').addTo(map)
+  var fingers = L.marker([32.083294, -26.1838228], {icon: mountain}).bindPopup('<b>The Fingers</b><br><sup>Guess what they look like!').addTo(map)
+  var cove = L.marker([9.096477, -105.262481], {icon: anchor}).bindPopup('<b>The Cove</b><br><sup>').addTo(map)
+  var saltless = L.marker([61.077402, 20.384721], {icon: water}).bindPopup('<b>The Saltless Sea</b><br><sup>').addTo(map)
+  var shield = L.marker([-11.779236, -15.29363], {icon: shield}).bindPopup('<b>Imperial Army</b><br><sup>I have a marker for these guys but dunno where any of them are actually based?? So tell me where I can throw more, Merlin? Where are Nel and Rais?????').addTo(map)
 	</script>
   </body>
 </html>
